@@ -3,6 +3,7 @@
 #include <stdbool.h>
 
 #define TAM 100
+
 typedef int Dato;
 
 typedef struct{

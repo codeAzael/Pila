@@ -10,6 +10,7 @@ typedef struct{
     int cima;
 } Pila;
 
+
 Pila vacia(int tam);
 bool es_vacia(Pila);
 void apilar(Pila *, Dato);
