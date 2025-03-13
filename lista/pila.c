@@ -4,50 +4,50 @@
 Pila *vacia()
 {
     Pila *p;
-    _________________
-    _________________
+    p = (Pila*)malloc(sizeof(Pila));
+    p->cima = NULL;
+    p->len = 0;
     return p;
 }
 
 bool es_vacia(Pila *p){
-    return ___________________;
+    return p->cima == NULL;
+    //return p->len ==0;
 }
 
 void apilar(Pila *p, Dato d)
 {
     nodo *nuevo = crear_nodo(d);
-    ___________________________;
-    ___________________________;
-    ___________________________;
+    nuevo->sig = p->cima;
+    p->cima = nuevo;
 
 }
 
 void desapilar(Pila *p)
-{
-    if(!es_vacia(p)){
-        ___________________________;
-        ___________________________;
-        ___________________________;
-    }else
-        printf("La pila está vacía\n");
+{ 
+    if(!es_vacia(p))
+    {
+        nodo *temp = p->cima;
+        p->cima = p->cima->sig;
+        temp->sig = NULL;
+        borrar_nodo (temp);
+        }else
+                printf("La pila está vacía\n");
 }
 
-Dato cima(Pila *p)
-{
-    return ______________________________;
+Dato cima(Pila *p){
+    return p->cima->dato;
 }
 
 void print_pila(Pila p)
 {
     
     if(es_vacia(&p)){
-        ____________________________________________________
-        ____________________________________________________
-        ____________________________________________________
+        printf("[]\n");
+        return;         
     }
     printf("[ ");
-    ____________________________________________________
-    ____________________________________________________
-    ____________________________________________________
+    for (nodo *temp = p.cima; temp !NULL; temp = temp->sig);
+            printf("%d ", temp->dato);
     printf("]\n");
 }

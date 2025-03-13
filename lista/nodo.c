@@ -3,7 +3,7 @@
 
 nodo* crear_nodo(int dato){
     nodo *n = (nodo*) malloc(sizeof(nodo));
-    n->dato= dato;
+    n->dato = dato;
     n->sig = NULL;
     return n;
 }

@@ -1,5 +1,6 @@
 #ifndef __NODO_H__
 #define __NODO_H__
+typedef int Dato;
 
 struct _nodo{
     int dato;

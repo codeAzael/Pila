@@ -4,25 +4,23 @@
 
 Pila vacia(int tam)
 {
-    
-    ________________________________________
-    ________________________________________
-    ________________________________________
-    ________________________________________
-    ________________________________________    
+    Pila p;
+    p.len = len;
+    p.datos = (Dato*)malloc(sizeof(Dato)*p.len);
+    p.cima = -1
 }
 
 bool es_vacia(Pila p){
-    return ________________________________________    
+    return p.cima == -1
 }
-
 
 void apilar(Pila *p, Dato d)
 {
     if(p->cima < p->len-1){
-        ________________________________________
-        ________________________________________
-    }else
+        p->cima++;
+        p->datos
+
+        }else
         printf("La pila está llena\n");
 }
 
@@ -36,7 +34,8 @@ void desapilar(Pila *p)
 
 Dato cima(Pila p)
 {
-    return _____________________________________
+    return p.datos(p.cima);
+
 }
 
 void print_pila(Pila p)

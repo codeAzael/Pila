@@ -3,13 +3,9 @@
 #include <stdbool.h>
 #include "nodo.h"
 
-typedef int Dato;
-
-typedef struct _nodo nodo;
-
 typedef struct{
-    nodo *cima;
-    int len;    
+    nodo *cima;  //Cuenta cuantos nodos hay en la pila
+    nodo *len;
 } Pila;
 
 Pila* vacia();

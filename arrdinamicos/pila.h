@@ -1,6 +1,7 @@
 #ifndef __PILA_H__
 #define __PILA_H__
 #include <stdbool.h>
+#include <stdio.h>
 
 typedef int Dato;
 
