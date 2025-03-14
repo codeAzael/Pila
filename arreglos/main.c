@@ -1,9 +1,9 @@
-#include <stdio.h>
 #include "pila.h"
 
-int main(){
+int main()
+{
     Pila p;
-    p=vacia();
+    p = vacia();
     print_pila(p);
     apilar(&p, 34);
     print_pila(p);
